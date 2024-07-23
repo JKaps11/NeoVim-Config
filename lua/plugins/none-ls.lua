@@ -12,7 +12,6 @@ return {
         		null_ls.builtins.formatting.isort,
         		null_ls.builtins.code_actions.gomodifytags,
         		null_ls.builtins.code_actions.impl,
-        		null_ls.builtins.diagnostics.golangci_lint,
         		null_ls.builtins.diagnostics.revive,
         		null_ls.builtins.formatting.gofumpt,
 				null_ls.builtins.formatting.gofmt,
