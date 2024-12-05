@@ -9,5 +9,14 @@ return {
 	config = function()
 		vim.keymap.set("n", "<C-n>", ":Neotree filesystem toggle right<CR>", {})
 		vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {})
-	end,
+    require('neo-tree').setup({
+      filesystem = {
+        filtered_items = {
+          hide_hidden = false,
+          hide_dotfiles = false,
+          respect_gitignore = false,
+        },
+      },
+    })
+  end,
 }
